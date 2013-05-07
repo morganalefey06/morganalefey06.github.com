@@ -1,0 +1,293 @@
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{
+	border:0;
+}
+address,caption,cite,code,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+
+
+
+
+
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+
+@media screen {
+
+CSS selector {  
+	font-family: 'Lusitana', serif;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+html{
+	text-align: center;
+	margin: 5px auto;
+	height:101%;
+	background:#ffffff 
+}
+body{
+	line-height: 1.5em;
+	margin: 0px auto;
+	padding: 5px;
+	width: 100%;
+	min-width: 300px;
+	float:none;
+
+	background:#ffffff /*url('images/acanthus.jpg') top left repeat-x;*/
+}
+
+
+#container
+{
+	margin: 0 auto;
+	width: 100%;
+	background:#fff;
+}
+
+#header
+{
+	background:#fff;
+	width: 100%;
+	padding: 20px;
+	clear:both;
+}
+#content
+{
+	clear: left;
+	width: 90%;
+	padding: 20px;
+}
+
+/*------------------------------------*\
+	NAV
+\*------------------------------------*/
+#nav{
+	list-style:none;
+	font-weight:bold;
+	margin-bottom:10px;
+	/* Clear floats */
+	
+	clear:right;
+	width:100%;
+	color:#77cdb0;
+	font: 14pt merriweather sans, sans-serif;
+	/* Bring the nav above everything else--uncomment if needed.
+	position:relative;
+	z-index:5;*/
+
+}
+a:link {
+	color:#fff;
+	text-decoration:none;
+	background-color:#77cdb0
+
+
+}      /* unvisited link */
+
+a:visited {
+	color:#fff;
+	text-decoration:none;
+	background-color:#77cdb0
+
+
+}  /* visited link */
+
+
+#nav li{
+	float:left;
+	clear:right;
+	margin-right:10px;
+	position:relative;
+}
+#nav a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	background:#77cdb0;
+	text-decoration:none;
+}
+#nav a:hover{
+	color:#fff;
+	text-decoration:underline;
+	background-color:#e4e48a
+
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+	background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+#nav ul li{
+	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+	float:none;
+	background: #77cdb0
+}
+#nav ul a{
+	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	left:0; /* Bring back on-screen when needed */
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background:##77cdb0;
+	text-decoration:underline;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	background:#333;
+}
+
+
+/*
+*650px and larger: browser
+*/
+@media screen and (min-width: 650px){
+		
+#nav a {
+		font-size:larger;
+		}		
+}
+
+
+
+/*
+*650px to 575: tablet
+*/
+@media screen and (max-width: 649px) and (min-width: 575px){
+		
+	#nav a {
+		font-size:75%;
+		}		
+}
+
+
+
+/*
+*575px to 450: tablet
+*/
+@media screen and (max-width: 574px) and (min-width: 450px){
+		
+	#nav a {
+		font-size:70%;
+		}	
+	
+	h1 {
+		font-size:175%;
+		}
+		
+	
+		}
+
+
+
+
+/*
+*450px and smaller: mobile
+*/
+@media screen and (max-width: 449px) and (min-width: 0px){
+	
+	body {	
+		max-width:100%;
+		float:none;
+		letter-spacing: 1px;
+		line-height:125%;
+		}
+		
+	h1 {
+		font-size:150%;
+		}
+
+
+	nav a {
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
+		border: none;
+		text-align: left
+		}	
+
+	nav ul {
+		display: table-row;
+
+				}
+		
+	nav li { 
+		display: table-cell;
+		margin:0;
+			}
+			
+		
+	
+	#content {
+		float:none;
+		width:100%;
+		}
+		
+	img { display: none; }
+
+}
+
+
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+h1{
+	font: 30pt Lusitana, serif;
+ 	font-weight: bold;
+  	line-height: 30pt;
+	text-decoration:none;
+	color:#77cdb0;
+	text-align:left;
+	padding: 10px;
+}
+
+.dropcap{
+    	float:left;
+	font-family:Lusitana,Georgia, serif;
+   	font-size:400%;
+    	margin-top:14px;
+    	margin-right:5px;
+    	color:#77cdb0;
+	
+    }
+    
+
+
+p {	font: 12pt merriweather sans, sans-serif;
+    	font-weight: normal;
+	line-height: 20pt;
+	text-align:justify;
+	text-indent:5px;
+	padding: 10px;
