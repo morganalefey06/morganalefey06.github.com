@@ -5,12 +5,9 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<title>GMU Plaster Cast Collection</title>
-    <!-- jQuery library (served from Google) -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<!-- bxSlider Javascript file -->
-<script src="jquery.bxslider.min.js"></script>
-<!-- bxSlider CSS file -->
-<link href="jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="jquery.carouFredSel-6.2.1.js"></script>
+
 
 	<link rel="stylesheet" type="text/css" href="styles.css" />
     <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
@@ -60,7 +57,30 @@
 	<p style="text-align:left; width:100%;">
 <span class="dropcap">W</span>elcome to George Mason University's Online Plaster Cast Catalogue.You can browse and search our plaster cast collection and learn about both the casts themselves and the art they were created from.  Originally obtained from the Metropolitan Museum of Art in 2003, the collection contains plaster casts created from the art of several periods including Ancient Greece and Modern Art. </p>
 
+<div id="carousel">
 
+  <img src="images/ahenobarbus.jpg" />
+  <img src="images/angel.jpg" />
+  <img src="images/dancer.jpg" />
+  <img src="images/faun.jpg" />
+  <img src="images/gandara.jpg" />
+</div>
+<script type="text/javascript">
+    /*	CarouFredSel: a circular, responsive jQuery carousel.
+    Configuration created by the "Configuration Robot"
+    at caroufredsel.dev7studios.com
+    */
+    $("#carousel").carouFredSel({
+        width: "90%",
+        height: "50%",
+        items: {
+            visible: "variable",
+            start: "random",
+            width: "variable",
+            height: "variable"
+        }
+    });
+</script>
 </div>
 </div>
 </body>
