@@ -63,19 +63,21 @@ body{
 
 img
 {
-    max-width:100%;
+    max-width:33%;
     height:auto;
 }
 #container
 {
 	margin: 0 auto;
 	width: 100%;
+	list-style:none;
 	background:#fff;
 }
 
 #header
 {
 	background:#fff;
+	list-style:none;
 	width: 100%;
 	padding: 20px;
 	clear:both;
@@ -83,12 +85,13 @@ img
 #content
 {
 	clear: left;
+	list-style:none;
 	width: 90%;
 	padding: 20px;
 }
 
 /*------------------------------------*\
-	NAV
+	#nav
 \*------------------------------------*/
 #nav{
 	list-style:none;
@@ -100,7 +103,7 @@ img
 	width:100%;
 	color:#77cdb0;
 	font: 14pt merriweather sans, sans-serif;
-	/* Bring the nav above everything else--uncomment if needed.
+	/* Bring the #nav above everything else--uncomment if needed.
 	position:relative;
 	z-index:5;*/
 
@@ -125,11 +128,13 @@ a:visited {
 #nav li{
 	float:left;
 	clear:right;
+	list-style:none;
 	margin-right:10px;
 	position:relative;
 }
 #nav a{
 	display:block;
+	list-style:none;
 	padding:5px;
 	color:#fff;
 	background:#77cdb0;
@@ -137,6 +142,7 @@ a:visited {
 }
 #nav a:hover{
 	color:#fff;
+	list-style:none;
 	text-decoration:underline;
 	background-color:#e4e48a
 
@@ -153,6 +159,7 @@ a:visited {
 #nav ul li{
 	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
 	float:none;
+	list-style:none;
 	background: #77cdb0
 }
 #nav ul a{
@@ -172,95 +179,6 @@ a:visited {
 	background:#333;
 }
 
-
-/*
-*650px and larger: browser
-*/
-@media screen and (min-width: 650px){
-		
-#nav a {
-		font-size:larger;
-		}		
-}
-
-
-
-/*
-*650px to 575: tablet
-*/
-@media screen and (max-width: 649px) and (min-width: 575px){
-		
-	#nav a {
-		font-size:75%;
-		}		
-}
-
-
-
-/*
-*575px to 450: tablet
-*/
-@media screen and (max-width: 574px) and (min-width: 450px){
-		
-	#nav a {
-		font-size:70%;
-		}	
-	
-	h1 {
-		font-size:175%;
-		}
-		
-	
-		}
-
-
-
-
-/*
-*450px and smaller: mobile
-*/
-@media screen and (max-width: 449px) and (min-width: 0px){
-	
-	body {	
-		max-width:100%;
-		float:none;
-		letter-spacing: 1px;
-		line-height:125%;
-		}
-		
-	h1 {
-		font-size:150%;
-		}
-
-
-	nav a {
-		display: table;
-		width: 100%;
-		border-collapse: collapse;
-		border: none;
-		text-align: left
-		}	
-
-	nav ul {
-		display: table-row;
-
-				}
-		
-	nav li { 
-		display: table-cell;
-		margin:0;
-			}
-			
-		
-	
-	#content {
-		float:none;
-		width:100%;
-		}
-		
-	img { display: none; }
-
-}
 
 
 
@@ -295,3 +213,10 @@ p {	font: 12pt merriweather sans, sans-serif;
 	text-align:justify;
 	text-indent:5px;
 	padding: 10px;
+}
+
+
+	#content {
+		float:none;
+		width:100%;
+		}
