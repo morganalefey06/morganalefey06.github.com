@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+     <meta charset="utf-8">  
+    <title>GMU Plaster Cast Collection</title>
+    <!--[if IE]>  
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+        <![endif]-->  
+
+<!-- jQuery library (served from Google) -->
+<script src="jquery-1.8.2.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+
+<body class="no-js">  
+<script>
+    var el = document.getElementsByTagName("body")[0];
+    el.className = "";  
+</script>  
+<div id="container">
+
+<div="logo">
+<img src="images/backgold.png" alt="Logo"width="50px"
+    height="auto" style="float:left; padding: 6px;" />
+</div>
+<div=header>
+
+
+<h1>George Mason University's Plaster Cast Collection</h1>
+</div>
+<div id="navigation">
+     <nav id="topNav">  
+                <ul>  
+                    <li><a href="index.html" title="Home">Home</a></li>  
+                      <li><a href="sculpturelocations.html" title="Sculpture Locations">Sculpture Locations</a></li> 
+                <li>  
+                    <a  href="catalogue.html" title="Catalogue">Catalogue 
+                    <ul>    
+                        <li><a href="greekroman.html" title="Greek and Roman Art">Greek and Roman Art</a></li>  
+                        <li><a href="neareast.html" title="Ancient Near East Art">Ancient Near East Art</a></li>  
+                        <li><a href="southasia.html" title="South Asian Art">South Asian Art</a></li>  
+                        <li><a href="medival.html" title="Medieval and Renaissance Art">Medieval and Renaissance Art</a></li>  
+                        <li><a href="islamic.html" title="Islamic Art">Islamic Art</a></li>  
+                        <li class="last"><a href="modern.html" title="Modern Art">Modern Art</a></li>  
+                    </ul>                  
+                </li>  
+                <li><a style="color:black" href="projecthistory.html" title="Project History">Project History</a></li>  
+                <li><a href="about.html" title="About">About</a></li>  
+               
+            </ul>  
+        </nav>  
+          </div>
+
+<div="content">
+<p style="text-align:left">
+
+</div>
+
+
+        <script src="jquery-1.8.2.min.js"></script> 
+        <script src="modernizr-2.5.3-min.js"></script>  
+        <script>
+            (function ($) {
+
+                //cache nav  
+                var nav = $("#topNav");
+
+                //add indicators and hovers to submenu parents  
+                nav.find("li").each(function () {
+                    if ($(this).find("ul").length > 0) {
+
+                        //                        $("<span>").text("^").appendTo($(this).children(":first"));
+
+                        //show subnav on hover  
+                        $(this).mouseenter(function () {
+                            $(this).find("ul").stop(true, true).slideDown();
+                        });
+
+                        //hide submenus on exit  
+                        $(this).mouseleave(function () {
+                            $(this).find("ul").stop(true, true).slideUp();
+                        });
+                    }
+                });
+            })(jQuery);  
+</script>  
+</div>
+<div class="wrapper">
+            <p> </p>
+            <div class="push"></div>
+        </div>
+        <div class="footer">
+	<span style="font-family:merriweather sans, sans-serif;color:#848484;">
+        <p>Copyright (c) 2013<br/>
+	GMU Plaster Casts  &nbsp;|      All Rights Reserved &nbsp;|   Contact Us:  mattusch@gmu.edu</p>
+       </span>
+</div>
+</body>	
+</html>
+</body>	
+</html>

@@ -1,88 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+     <meta charset="utf-8">  
+    <title>GMU Plaster Cast Collection</title>
+    <!--[if IE]>  
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+        <![endif]-->  
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
+<!-- jQuery library (served from Google) -->
+<script src="jquery-1.8.2.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
 
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<title>GMU Plaster Cast Collection</title>
-<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="jquery.carouFredSel-6.2.1.js"></script>
-
-
-	<link rel="stylesheet" type="text/css" href="styles.css" />
-    <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  </head>
 
-</head>
-<body>
+<body class="no-js">  
+<script>
+    var el = document.getElementsByTagName("body")[0];
+    el.className = "";  
+</script>  
 <div id="container">
-<div id="header">
-<img src="images/backgold.png" alt="Logo"width="100"
-    height="100" style="float:left; padding: 6px;" />
- 
+
+<div="logo">
+<img src="images/backgold.png" alt="Logo"width="50px"
+    height="auto" style="float:left; padding: 6px;" />
+</div>
+<div=header>
+
 
 <h1>George Mason University's Plaster Cast Collection</h1>
 </div>
-<div id="navigation">
-	<ul id="nav">
-		<li>
-			<a href="/" title="Home">Home</a>
-        </li>
-		<li>
-			<a  href="/locations/">Sculpture Locations</a>
-		
+<div id="navigation">
+     <nav id="topNav">  
+                <ul>  
+                    <li><a style="color:black" href="index.html" title="Home">Home</a></li>  
+                      <li><a href="sculpturelocations.html" title="Sculpture Locations">Sculpture Locations</a></li> 
+                <li>  
+                    <a href="catalogue.html" title="Catalogue">Catalogue 
+                    <ul>    
+                        <li><a href="greekroman.html" title="Greek and Roman Art">Greek and Roman Art</a></li>  
+                        <li><a href="neareast.html" title="Ancient Near East Art">Ancient Near East Art</a></li>  
+                        <li><a href="southasia.html" title="South Asian Art">South Asian Art</a></li>  
+                        <li><a href="medieval.html" title="Medieval and Renaissance Art">Medieval and Renaissance Art</a></li>  
+                        <li><a href="islamic.html" title="Islamic Art">Islamic Art</a></li>  
+                        <li class="last"><a href="modern.html" title="Modern Art">Modern Art</a></li>  
+                    </ul>                  
+                </li>  
+                <li><a href="projecthistory.html" title="Project History">Project History</a></li>  
+                <li><a href="about.html" title="About">About</a></li>  
+               
+            </ul>  
+        </nav>  
+          </div>
 
-		</li>
-		<li>
-			<a href="/catalogue/">Catalogue</a>
-			<ul>
-				<li><a href="greekroman.html"> Greek and Roman Art</a></li>
-		        <li><a href="neareast.html"> Ancient Near East Art</a></li>
-		        <li><a href="southasia.html"> South Asian Art</a></li>
-		        <li><a href="medival.html"> Medieval and Renaissance Art</a></li>
-		        <li><a href="islamic.html"> Islamic Art </a></li>
-		        <li><a href="modern.html"> Modern Art </a></li>
-			</ul>
-		</li>
-	   <li>
-       <a href="history.html">Project History</a>
-       </li>
-  <li>
-  <a href="about.html">About</a>
-  </li>
-  
-  </ul>
-  </div>
-  <div id="content">
-	<p style="text-align:left; width:100%;">
+<div="content">
+<img src="images/TinyDancer.jpg" alt="Dancer"width="20%"
+    height="auto"style="float:right;   padding: 15px;" />
+
+<p style="text-align:left">
 <span class="dropcap">W</span>elcome to George Mason University's Online Plaster Cast Catalogue.You can browse and search our plaster cast collection and learn about both the casts themselves and the art they were created from.  Originally obtained from the Metropolitan Museum of Art in 2003, the collection contains plaster casts created from the art of several periods including Ancient Greece and Modern Art. </p>
 
-<div id="carousel">
+</div>
 
-  <img src="images/ahenobarbus.jpg" />
-  <img src="images/angel.jpg" />
-  <img src="images/dancer.jpg" />
-  <img src="images/faun.jpg" />
-  <img src="images/gandara.jpg" />
+        <script src="jquery-1.8.2.min.js"></script> 
+        <script src="modernizr-2.5.3-min.js"></script>  
+        <script>
+            (function ($) {
+
+                //cache nav  
+                var nav = $("#topNav");
+
+                //add indicators and hovers to submenu parents  
+                nav.find("li").each(function () {
+                    if ($(this).find("ul").length > 0) {
+
+//                        $("<span>").text("^").appendTo($(this).children(":first"));
+
+                        //show subnav on hover  
+                        $(this).mouseenter(function () {
+                            $(this).find("ul").stop(true, true).slideDown();
+                        });
+
+                        //hide submenus on exit  
+                        $(this).mouseleave(function () {
+                            $(this).find("ul").stop(true, true).slideUp();
+                        });
+                    }
+                });
+            })(jQuery);  
+</script>  
 </div>
-<script type="text/javascript">
-    /*	CarouFredSel: a circular, responsive jQuery carousel.
-    Configuration created by the "Configuration Robot"
-    at caroufredsel.dev7studios.com
-    */
-    $("#carousel").carouFredSel({
-        width: "90%",
-        height: "50%",
-        items: {
-            visible: "variable",
-            start: "random",
-            width: "variable",
-            height: "variable"
-        }
-    });
-</script>
+<div class="wrapper">
+            <p> </p>
+            <div class="push"></div>
+        </div>
+        <div class="footer">
+	<span style="font-family:merriweather sans, sans-serif;color:#848484;">
+        <p>Copyright (c) 2013<br/>
+	GMU Plaster Casts  &nbsp;|      All Rights Reserved &nbsp;|   Contact Us:  mattusch@gmu.edu</p>
+       </span>
 </div>
-</div>
-</body>
+</body>	
+</html>
+</body>	
 </html>
